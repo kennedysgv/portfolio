@@ -9,11 +9,13 @@ export function Header(): JSX.Element {
       <div className="header__bar">
         <div className="header__inner">
           <a className="logo" href="#topo" onClick={close}>
-            <span className="logo__mark" aria-hidden="true" />
-            <span className="logo__text">
-              <strong>Kennedy Vieira</strong>
-              <small>Fisioterapia</small>
-            </span>
+            <img
+              src="/images/KV.png"
+              alt="Kennedy Vieira - Fisioterapia"
+              className="logo__image"
+              width={48}
+              height={48}
+            />
           </a>
           <button
             className={`nav-toggle${open ? ' nav-toggle--open' : ''}`}

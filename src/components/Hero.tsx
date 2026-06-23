@@ -66,6 +66,7 @@ export function Hero(): JSX.Element {
                 alt="Kennedy Vieira, fisioterapeuta"
                 width={320}
                 height={320}
+                loading="lazy"
                 onError={handleImgError}
               />
               <div className="hero__photo-fallback" aria-hidden="true">

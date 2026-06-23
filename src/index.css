@@ -131,6 +131,7 @@ strong {
   position: sticky;
   top: 0;
   z-index: 200;
+  width: 100%;
   background: rgba(250, 248, 245, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
@@ -145,6 +146,7 @@ strong {
   z-index: 202;
   background: inherit;
   border-bottom: 1px solid transparent;
+  width: 100%;
 }
 
 .header--menu-open .header__bar {
@@ -171,31 +173,11 @@ strong {
   color: inherit;
 }
 
-.logo__mark {
-  width: 40px;
-  height: 40px;
-  border-radius: 50% 50% 50% 12%;
-  background: linear-gradient(135deg, var(--green) 0%, var(--brown) 100%);
-}
-
-.logo__text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-  min-width: 0;
-}
-
-.logo__text strong {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  color: var(--brown-dark);
-}
-
-.logo__text small {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.logo__image {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  flex-shrink: 0;
 }
 
 .nav-toggle {
@@ -759,12 +741,12 @@ strong {
 
 .region__map {
   position: relative;
-  aspect-ratio: 4/3;
-  max-width: 320px;
-  margin: 0 auto;
+  aspect-ratio: 1;
+  width: 100%;
   background: linear-gradient(160deg, var(--green-soft) 0%, var(--brown-soft) 100%);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
+  overflow: hidden;
 }
 
 .region__pin {
